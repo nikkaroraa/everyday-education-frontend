@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route path={routes.Home} component={Home} />
+          <Route exact path={routes.Home} component={Home} />
           <Route component={NotFound} />
         </Switch>
       </Router>
