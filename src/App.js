@@ -1,16 +1,25 @@
 import React, { Component } from 'react';
 import {
-  Button,
-} from 'antd';
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+
+import routes from './config/routes';
+
+import Home from './components/Home';
+import NotFound from './components/NotFound';
 
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <h2>Everyday Education</h2>
-        <Button primary>Try it</Button>
-      </div>
+      <Router>
+        <Switch>
+          <Route path={routes.Home} component={Home} />
+          <Route component={NotFound} />
+        </Switch>
+      </Router>
     );
   }
 }
