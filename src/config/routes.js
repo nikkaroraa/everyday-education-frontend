@@ -3,7 +3,7 @@ const Home = '/';
 const routes = {
   Home,
   Login: '/login',
-  Register: '/register',
+  Signup: '/signup',
 };
 
 export default routes;
