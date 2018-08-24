@@ -14,7 +14,7 @@ import routes from '../../config/routes';
 class Home extends Component {
   getStarted = () => {
     const { history } = this.props;
-    history.push(routes.Login);
+    history.push(routes.NewLearning);
   }
 
   render() {
@@ -74,7 +74,7 @@ class Home extends Component {
           </Row>
           <Row>
             <Button type="primary" onClick={this.getStarted}>
-              GET ON BOARD<Icon type="right" />
+              GET STARTED<Icon type="right" />
             </Button>
           </Row>
         </Row>
