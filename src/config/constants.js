@@ -9,4 +9,5 @@ if ((env === 'production') || (env === 'staging')) {
   URLS.FRONTEND_URL = 'https://everyday-education.netlify.com';
 }
 
+
 export { URLS };
