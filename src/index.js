@@ -6,10 +6,11 @@ import { ApolloProvider } from 'react-apollo';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import { URLS } from './config/constants';
 
 
 const client = new ApolloClient({
-  uri: 'http://localhost:8000',
+  uri: URLS.BACKEND_URL,
 });
 
 
