@@ -10,7 +10,8 @@ import routes from './config/routes';
 import Home from './components/Home';
 import NotFound from './components/NotFound';
 import Status from './components/Status';
-import NewLearning from './components/NewLearning';
+import AddLearning from './components/AddLearning';
+import GetLearnings from './components/GetLearnings';
 
 
 class App extends Component {
@@ -20,7 +21,8 @@ class App extends Component {
         <Switch>
           <Route exact path={routes.Home} component={Home} />
           <Route exact path={routes.Status} component={Status} />
-          <Route exact path={routes.NewLearning} component={NewLearning} />
+          <Route exact path={routes.AddLearning} component={AddLearning} />
+          <Route exact path={routes.GetLearnings} component={GetLearnings} />
           <Route component={NotFound} />
         </Switch>
       </Router>
