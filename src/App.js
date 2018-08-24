@@ -10,6 +10,7 @@ import routes from './config/routes';
 import Home from './components/Home';
 import NotFound from './components/NotFound';
 import Status from './components/Status';
+import NewLearning from './components/NewLearning';
 
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
         <Switch>
           <Route exact path={routes.Home} component={Home} />
           <Route exact path={routes.Status} component={Status} />
+          <Route exact path={routes.NewLearning} component={NewLearning} />
           <Route component={NotFound} />
         </Switch>
       </Router>
