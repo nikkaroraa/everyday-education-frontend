@@ -3,7 +3,8 @@ const Home = '/';
 const routes = {
   Home,
   Status: '/status',
-  NewLearning: '/new-learning',
+  AddLearning: '/add-learning',
+  GetLearnings: '/get-learnings',
 };
 
 export default routes;

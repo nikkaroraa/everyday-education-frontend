@@ -14,7 +14,7 @@ import routes from '../../config/routes';
 class Home extends Component {
   getStarted = () => {
     const { history } = this.props;
-    history.push(routes.NewLearning);
+    history.push(routes.AddLearning);
   }
 
   render() {
