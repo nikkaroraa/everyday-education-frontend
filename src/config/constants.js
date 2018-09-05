@@ -5,7 +5,7 @@ const URLS = {
 
 const env = process.env.NODE_ENV;
 if ((env === 'production') || (env === 'staging')) {
-  URLS.BACKEND_URL = 'https://everyday-education.now.sh';
+  URLS.BACKEND_URL = 'https://everyday-education-backend.now.sh';
   URLS.FRONTEND_URL = 'https://everyday-education.netlify.com';
 }
 
